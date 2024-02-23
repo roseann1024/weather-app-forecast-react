@@ -1,0 +1,119 @@
+.Weather {
+  max-width: 600px;
+  margin: 10px auto;
+  padding: 10px;
+  padding-bottom: 10px;
+}
+
+form {
+  display: block;
+  background: linear-gradient(
+    114.3deg,
+    rgb(19, 126, 57) 0.2%,
+    rgb(8, 65, 91) 68.5%
+  );
+  padding: 20px;
+  border-radius: 20px;
+  padding-right: 40px;
+}
+
+.Weather .form-control {
+  border-radius: 6px;
+  margin-left: 15px;
+  font-size: 12px;
+  padding: 8px;
+}
+
+.Weather .button-search {
+  padding: 7px 20px;
+  margin-right: 25px;
+  border-radius: 8px;
+  border: 0;
+  line-height: 1.5;
+  font-size: 14px;
+  transition: all 150ms ease-in-out;
+  color: #001607;
+}
+
+.Weather .day-forecast {
+  display: block;
+  background: linear-gradient(
+    114.3deg,
+    rgb(19, 126, 57) 0.2%,
+    rgb(8, 65, 91) 68.5%
+  );
+  padding: 20px;
+  border-radius: 20px;
+  padding-right: 40px;
+  margin-top: 30px;
+}
+
+.Weather .searched-city {
+  color: #001607;
+  padding: 10px;
+  margin: 0 20px;
+  background: white;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.Weather .icon-location {
+  margin-right: 5px;
+}
+
+.Weather .unit {
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+.Weather .section-1 {
+  color: whitesmoke;
+}
+
+.Weather .date-today {
+  margin: 10px;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.Weather .icon {
+  margin: 0;
+  position: relative;
+  top: -30px;
+  margin-right: 5px;
+}
+
+.Weather .temperature {
+  font-size: 88px;
+  font-weight: bold;
+  position: relative;
+  top: -10px;
+  margin: 0;
+  padding: 0;
+}
+
+.Weather .degree {
+  position: relative;
+  top: -55px;
+  font-size: 24px;
+}
+
+.Weather .description {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin-top: 5px;
+}
+
+.Weather .weather-today {
+  color: whitesmoke;
+  font-size: 14px;
+}

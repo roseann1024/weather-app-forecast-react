@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Weather.css";
-import FormattedDate from "./FormattedDate";
 import axios from "axios";
+import WeatherInfo from "./WeatherInfo";
 
 export default function Weather(props) {
   const [ready, setReady] = useState(false);
@@ -13,7 +13,6 @@ export default function Weather(props) {
       wind: response.data.wind.speed,
       city: response.data.name,
       country: response.data.sys.country,
-      time: "13:35 Friday",
       date: new Date(response.data.dt * 1000),
       feels_like: response.data.main.feels_like,
       humidity: response.data.main.humidity,
@@ -43,58 +42,7 @@ export default function Weather(props) {
               </div>
             </div>
           </form>
-        </div>
-        <div className="day-forecast">
-          <div className="row">
-            <div className="col-6">
-              <div className="searched-city">
-                <span className="icon-location">
-                  <img
-                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/350/original/location_2838912.png?1708643713"
-                    width="20"
-                    alt="location-icon"
-                  ></img>
-                </span>
-                <span className="city">
-                  {weatherData.city}, {weatherData.country}
-                </span>
-              </div>
-            </div>
-            <div className="col-6">
-              <div className="unit">C | F</div>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-6 section-1">
-              <div className="date-today">
-                <FormattedDate date={weatherData.date} />
-              </div>
-              <span className="icon"></span>
-              <span className="temperature">
-                {Math.round(weatherData.temperature)}
-              </span>
-              <span className="degree">°C</span>
-              <div className="feels-like">
-                Feels like {Math.round(weatherData.feels_like)}°C
-              </div>
-            </div>
-            <div className="col-6 weather-today">
-              <ul>
-                <li>
-                  {" "}
-                  <img
-                    src={weatherData.icon}
-                    alt={weatherData.description}
-                    width="100px"
-                  />
-                </li>
-                <li className="text-capitalize">{weatherData.description}</li>
-
-                <li>Humidity: {weatherData.humidity}%</li>
-                <li>Wind: {weatherData.wind}km/hr</li>
-              </ul>
-            </div>
-          </div>
+          <WeatherInfo data={weatherData} />
         </div>
       </div>
     );

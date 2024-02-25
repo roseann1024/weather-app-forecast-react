@@ -50,7 +50,7 @@ export default function WeatherTemperature(props) {
           </a>
         </span>
         <div className="feels-like">
-          Feels like {Math.round(feels_like_fahrenheit)}°
+          Feels like <strong> {Math.round(feels_like_fahrenheit)}° </strong>
         </div>
         <div className="high-low-temp">
           High: <strong>{Math.round(high_temp)}°</strong> | Low:{" "}

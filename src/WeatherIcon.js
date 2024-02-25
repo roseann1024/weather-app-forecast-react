@@ -12,7 +12,6 @@ export default function WeatherIcon(props) {
     "11d": "SLEET",
     "13d": "SNOW",
     "50d": "FOG",
-
     "01n": "CLEAR_NIGHT",
     "02n": "PARTLY_CLOUDY_NIGHT",
     "03n": "CLOUDY",
@@ -25,21 +24,21 @@ export default function WeatherIcon(props) {
   };
 
   if (
-    (props.code === "01d",
-    "02d",
-    "03d",
-    "04d",
-    "09d",
-    "10d",
-    "11d",
-    "13d",
-    "50d")
+    props.code === "01d" ||
+    props.code === "02d" ||
+    props.code === "03d" ||
+    props.code === "04d" ||
+    props.code === "09d" ||
+    props.code === "10d" ||
+    props.code === "11d" ||
+    props.code === "13d" ||
+    props.code === "50d"
   ) {
     return (
       <ReactAnimatedWeather
         icon={codeMapping[props.code]}
-        color="#FFE168"
-        size={90}
+        color="#fcff82"
+        size={70}
         animate={true}
       />
     );
@@ -47,8 +46,8 @@ export default function WeatherIcon(props) {
     return (
       <ReactAnimatedWeather
         icon={codeMapping[props.code]}
-        color="#79c2d0"
-        size={90}
+        color="#afc5ff"
+        size={70}
         animate={true}
       />
     );

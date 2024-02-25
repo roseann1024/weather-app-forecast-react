@@ -3,6 +3,8 @@
   margin: 10px auto;
   padding: 10px;
   padding-bottom: 10px;
+  background: rgb(11, 32, 11);
+  border-radius: 20px;
 }
 
 form {
@@ -22,6 +24,7 @@ form {
   margin-left: 15px;
   font-size: 12px;
   padding: 8px;
+  color: #03571e;
 }
 
 .Weather .button-search {
@@ -32,7 +35,8 @@ form {
   line-height: 1.5;
   font-size: 14px;
   transition: all 150ms ease-in-out;
-  color: #001607;
+  color: whitesmoke;
+  background: #001607;
 }
 
 .Weather .day-forecast {
@@ -49,17 +53,19 @@ form {
 }
 
 .Weather .searched-city {
-  color: #001607;
+  color: whitesmoke;
   padding: 10px;
-  margin: 0 20px;
-  background: white;
+  margin: 0 80px;
+  background: #001607;
   border-radius: 10px;
   font-size: 14px;
   text-align: center;
+  display: block;
 }
 
 .Weather .icon-location {
-  margin-right: 5px;
+  margin-right: 3px;
+  color: whitesmoke;
 }
 
 .Weather .unit {
@@ -79,38 +85,30 @@ form {
   font-size: 14px;
   text-align: center;
   margin-bottom: 15px;
+  color: whitesmoke;
 }
 
-.Weather .icon {
+.Weather .weather-temperature {
   margin: 0;
-  position: relative;
-  top: -30px;
-  margin-right: 5px;
+  padding: 0;
+  text-align: center;
 }
 
 .Weather .temperature {
-  font-size: 88px;
+  font-size: 80px;
   font-weight: bold;
-  position: relative;
-  top: -10px;
-  margin: 0;
   padding: 0;
 }
 
 .Weather .degree {
+  font-size: 20px;
   position: relative;
-  top: -55px;
-  font-size: 24px;
+  top: -45px;
 }
 
 .Weather .description {
   margin: 0;
   padding: 0;
-}
-
-li {
-  list-style: none;
-  margin-top: 5px;
 }
 
 .Weather .weather-today {

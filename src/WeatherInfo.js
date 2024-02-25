@@ -7,6 +7,9 @@ export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
       <div className="day-forecast">
+        <div className="date-today">
+          <FormattedDate date={props.data.date} />
+        </div>
         <div className="searched-city">
           <span className="icon-location">
             <img
@@ -19,9 +22,6 @@ export default function WeatherInfo(props) {
             {props.data.city}, {props.data.country}
           </span>
         </div>
-        <div className="date-today">
-          <FormattedDate date={props.data.date} />
-        </div>
 
         <div className="row row justify-content-center">
           <div className="col-6 section-1">
@@ -29,15 +29,38 @@ export default function WeatherInfo(props) {
               <WeatherTemperature
                 celsius={props.data.temperature}
                 feels_like={props.data.feels_like}
+                high={props.data.high}
+                low={props.data.low}
               />
             </div>
           </div>
           <div className="col-6 weather-today">
             <WeatherIcon code={props.data.icon} alt={props.data.description} />
-            <div className="text-capitalize">{props.data.description}</div>
 
-            <div>Humidity: {props.data.humidity}%</div>
-            <div>Wind: {props.data.wind}km/hr</div>
+            <div className="text-capitalize">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/634/original/temperature-control.png?1708892685"
+                width="15"
+                alt="thermostat-icon"
+              />{" "}
+              <span className="text-capitalize">{props.data.description}</span>
+            </div>
+            <div>
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/636/original/humidity_%282%29.png?1708892696"
+                alt="humidity-icon"
+                width="15"
+              />{" "}
+              Humidity: <strong>{props.data.humidity}%</strong>
+            </div>
+            <div>
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/635/original/wind_%281%29.png?1708892690"
+                alt="wind-icon"
+                width="15"
+              />{" "}
+              Wind: <strong>{props.data.wind}km/hr</strong>
+            </div>
           </div>
         </div>
       </div>

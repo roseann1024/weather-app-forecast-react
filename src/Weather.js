@@ -19,6 +19,8 @@ export default function Weather(props) {
       humidity: response.data.main.humidity,
       description: response.data.weather[0].description,
       icon: response.data.weather[0].icon,
+      high: response.data.main.temp_max,
+      low: response.data.main.temp_min,
     });
     console.log(response.data);
     setReady(true);

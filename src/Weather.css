@@ -49,13 +49,13 @@ form {
   padding: 20px;
   border-radius: 20px;
   padding-right: 40px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .Weather .searched-city {
   color: whitesmoke;
   padding: 10px;
-  margin: 0 80px;
+  margin: 20px 80px;
   background: #001607;
   border-radius: 10px;
   font-size: 14px;
@@ -81,29 +81,26 @@ form {
 }
 
 .Weather .date-today {
-  margin: 10px;
   font-size: 14px;
   text-align: center;
-  margin-bottom: 15px;
   color: whitesmoke;
 }
 
-.Weather .weather-temperature {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
 .Weather .temperature {
-  font-size: 80px;
+  font-size: 75px;
   font-weight: bold;
   padding: 0;
 }
 
 .Weather .degree {
-  font-size: 20px;
+  font-size: 18px;
   position: relative;
   top: -45px;
+}
+
+.Weather canvas {
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 .Weather .description {
@@ -111,11 +108,23 @@ form {
   padding: 0;
 }
 
+.Weather strong {
+  color: #76e9fd;
+  font-weight: 600;
+}
+
 .Weather .weather-today {
   color: whitesmoke;
   font-size: 14px;
 }
 
+.Weather .feels-like {
+  font-size: 12px;
+}
+
+.Weather .high-low-temp {
+  font-size: 12px;
+}
 .loading {
   color: white;
 }

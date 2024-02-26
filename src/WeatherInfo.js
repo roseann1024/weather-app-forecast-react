@@ -59,7 +59,7 @@ export default function WeatherInfo(props) {
                 alt="wind-icon"
                 width="15"
               />{" "}
-              Wind: <strong>{props.data.wind}km/hr</strong>
+              Wind: <strong>{props.data.wind} km/hr</strong>
             </div>
           </div>
         </div>

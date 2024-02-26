@@ -167,12 +167,17 @@ a:hover {
   .Weather .searched-city {
     margin: 10px;
   }
+
+  .WeatherTemperature {
+    padding-top: 15px;
+  }
   .Weather .temperature {
-    font-size: 65px;
+    font-size: 62px;
+    font-weight: 500;
   }
 
   .Weather .degree {
-    font-size: 14px;
+    font-size: 10px;
     position: relative;
     top: -45px;
     color: #e2f694;
@@ -194,5 +199,9 @@ a:hover {
 
   .Weather .date-today {
     margin: 0;
+  }
+
+  .Weather .high-low-temp {
+    font-size: 10px;
   }
 }

@@ -25,6 +25,7 @@ form {
   font-size: 12px;
   padding: 8px;
   color: #03571e;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .Weather .button-search {

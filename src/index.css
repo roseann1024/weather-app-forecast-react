@@ -1,4 +1,9 @@
 .Index {
   background: black;
+  background-position: center;
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
   min-height: 100vh;
 }

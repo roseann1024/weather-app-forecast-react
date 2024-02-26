@@ -25,12 +25,12 @@
   font-size: 14px;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 970px) {
   .App .title {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .App footer {
-    font-size: 8px;
+    font-size: 7px;
   }
 }

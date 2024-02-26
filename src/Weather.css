@@ -16,7 +16,8 @@ form {
   );
   padding: 20px;
   border-radius: 20px;
-  padding-right: 40px;
+  padding-right: 60px;
+  padding-left: 30px;
 }
 
 .Weather .form-control {
@@ -145,14 +146,18 @@ a:hover {
   color: #e2f694;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 970px) {
+  form {
+    padding: 10px;
+    padding-right: 30px;
+  }
   .Weather .form-control {
     margin: 0;
   }
   .Weather .button-search {
     margin-left: 0;
     margin-right: 5px;
-    padding: 7px 10px;
+    padding: 7px 5px;
   }
 
   .Weather .day-forecast {
@@ -179,11 +184,15 @@ a:hover {
   }
 
   .Weather .weather-label {
-    font-size: 12px;
+    font-size: 10px;
   }
   .Weather .description {
     margin: 0;
     padding: 0;
     font-size: 10px;
+  }
+
+  .Weather .date-today {
+    margin: 0;
   }
 }

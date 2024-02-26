@@ -47,7 +47,7 @@ export default function WeatherInfo(props) {
                 <strong>{props.data.description}</strong>
               </span>
             </div>
-            <div>
+            <div className="weather-label">
               <img
                 src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/636/original/humidity_%282%29.png?1708892696"
                 alt="humidity-icon"
@@ -55,7 +55,7 @@ export default function WeatherInfo(props) {
               />{" "}
               Humidity: <strong>{props.data.humidity}%</strong>
             </div>
-            <div>
+            <div className="weather-label">
               <img
                 src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/635/original/wind_%281%29.png?1708892690"
                 alt="wind-icon"

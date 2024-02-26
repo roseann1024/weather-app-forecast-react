@@ -22,5 +22,15 @@
 
 .App footer {
   color: whitesmoke;
-  font-size: 10px;
+  font-size: 14px;
+}
+
+@media (max-width: 960px) {
+  .App .title {
+    font-size: 30px;
+  }
+
+  .App footer {
+    font-size: 8px;
+  }
 }

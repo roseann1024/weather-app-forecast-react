@@ -63,11 +63,11 @@ form {
   text-align: center;
   display: block;
   font-weight: 700;
+  margin-left: 100px;
 }
 
 .Weather .icon-location {
   margin-right: 3px;
-  color: whitesmoke;
 }
 
 .Weather .unit {
@@ -86,6 +86,9 @@ form {
   font-size: 14px;
   text-align: center;
   color: whitesmoke;
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
 }
 
 .Weather .temperature {
@@ -140,4 +143,47 @@ a {
 a:hover {
   font-style: italic;
   color: #e2f694;
+}
+
+@media (max-width: 960px) {
+  .Weather .form-control {
+    margin: 0;
+  }
+  .Weather .button-search {
+    margin-left: 0;
+    margin-right: 5px;
+    padding: 7px 10px;
+  }
+
+  .Weather .day-forecast {
+    padding: 10px;
+  }
+
+  .Weather .searched-city {
+    margin: 10px;
+  }
+  .Weather .temperature {
+    font-size: 70px;
+  }
+
+  .Weather .degree {
+    font-size: 14px;
+    position: relative;
+    top: -45px;
+    color: #e2f694;
+  }
+  .Weather strong {
+    color: #76e9fd;
+    font-weight: 500;
+    font-size: 12px;
+  }
+
+  .Weather .weather-label {
+    font-size: 12px;
+  }
+  .Weather .description {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+  }
 }

@@ -3,7 +3,7 @@
   margin: 10px auto;
   padding: 10px;
   padding-bottom: 10px;
-  background: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+  background: linear-gradient(60deg, #66e0b8 0%, #fbed96 100%);
   border-radius: 20px;
 }
 
@@ -157,7 +157,7 @@ a:hover {
   .Weather .button-search {
     margin-left: 0;
     margin-right: 5px;
-    padding: 7px 5px;
+    padding: 7px 10px;
   }
 
   .Weather .day-forecast {

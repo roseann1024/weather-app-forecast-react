@@ -26,6 +26,10 @@
 }
 
 @media (max-width: 970px) {
+  .App {
+    padding: 5px;
+  }
+
   .App .title {
     font-size: 28px;
   }

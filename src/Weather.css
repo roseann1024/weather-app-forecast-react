@@ -3,7 +3,7 @@
   margin: 10px auto;
   padding: 10px;
   padding-bottom: 10px;
-  background: rgb(11, 32, 11);
+  background: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
   border-radius: 20px;
 }
 
@@ -36,8 +36,8 @@ form {
   line-height: 1.5;
   font-size: 14px;
   transition: all 150ms ease-in-out;
-  color: whitesmoke;
-  background: #001607;
+  color: #03571e;
+  background: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
 }
 
 .Weather .day-forecast {
@@ -54,14 +54,15 @@ form {
 }
 
 .Weather .searched-city {
-  color: whitesmoke;
+  color: #03571e;
   padding: 10px;
   margin: 20px 80px;
-  background: #001607;
+  background: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
   border-radius: 10px;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
   display: block;
+  font-weight: 700;
 }
 
 .Weather .icon-location {
@@ -91,12 +92,14 @@ form {
   font-size: 75px;
   font-weight: bold;
   padding: 0;
+  color: #e2f694;
 }
 
 .Weather .degree {
   font-size: 18px;
   position: relative;
   top: -45px;
+  color: #e2f694;
 }
 
 .Weather canvas {
@@ -128,4 +131,13 @@ form {
 }
 .loading {
   color: white;
+}
+
+a {
+  color: aquamarine;
+}
+
+a:hover {
+  font-style: italic;
+  color: #e2f694;
 }

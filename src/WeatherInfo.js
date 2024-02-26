@@ -43,7 +43,9 @@ export default function WeatherInfo(props) {
                 width="15"
                 alt="thermostat-icon"
               />{" "}
-              <span className="text-capitalize">{props.data.description}</span>
+              <span className="text-capitalize">
+                <strong>{props.data.description}</strong>
+              </span>
             </div>
             <div>
               <img

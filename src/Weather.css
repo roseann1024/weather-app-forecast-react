@@ -41,6 +41,14 @@ form {
   background: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
 }
 
+.Weather .button-search:hover {
+  color: whitesmoke;
+  background: linear-gradient(
+    114.3deg,
+    rgb(19, 126, 57) 0.2%,
+    rgb(8, 65, 91) 68.5%
+  );
+}
 .Weather .day-forecast {
   display: block;
   background: linear-gradient(

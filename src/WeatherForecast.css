@@ -1,0 +1,31 @@
+.WeatherForecast {
+  background: linear-gradient(
+    114.3deg,
+    rgb(19, 126, 57) 0.2%,
+    rgb(8, 65, 91) 68.5%
+  );
+
+  margin: 10px 0;
+  border-radius: 20px;
+  color: whitesmoke;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.WeatherForecast .weatheforecast-title {
+  text-align: left;
+  margin: 10px;
+  font-size: 14px;
+}
+
+.WeatherForecast .weatherforecast-daily {
+  margin-left: 5px;
+}
+
+.WeatherForecast .weatherforecast-max {
+  font-weight: 500;
+  color: #76e9fd;
+}
+.WeatherForecast .weatherforecast-min {
+  margin-left: 5px;
+}

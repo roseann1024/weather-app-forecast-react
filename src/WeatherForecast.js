@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import WeatherForecastDay from "./WeatherForecastDay";
 import "./WeatherForecast.css";
@@ -6,32 +6,45 @@ import { ColorRing } from "react-loader-spinner";
 
 export default function WeatherForecast(props) {
   let [loaded, setLoaded] = useState(false);
-  let [forecast, setforecast] = useState(null);
+  let [forecast, setForecast] = useState(null);
+
+  useEffect(() => {
+    setLoaded(false);
+  }, [props.coordinates]);
 
   function handleResponse(response) {
     setLoaded(true);
-    setforecast(response.data.daily);
-    console.log(response.data);
+    setForecast(response.data.daily);
   }
 
-  if (loaded) {
-    return (
-      <div className="WeatherForecast">
-        <div className="weatheforecast-title">NEXT 5-DAY FORECAST</div>
-        <div className="row">
-          <div className="col">
-            <WeatherForecastDay data={forecast[1]} />
-          </div>
-        </div>
-      </div>
-    );
-  } else {
+  function load() {
     let apiKey = "bf54175800a55e59e6c4d6461deeef12";
     let apiLat = props.coordinates.lat;
     let apiLon = props.coordinates.lon;
     let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${apiLat}&lon=${apiLon}&appid=${apiKey}&units=metric`;
 
     axios.get(apiUrl).then(handleResponse);
+  }
+
+  if (loaded) {
+    return (
+      <div className="WeatherForecast">
+        <div className="forecast-title">NEXT 5-DAY FORECAST</div>
+        <div className="row">
+          {forecast.map(function (dailyForecast, index) {
+            if (index < 5) {
+              return (
+                <div className="col" key={index}>
+                  <WeatherForecastDay data={dailyForecast} />
+                </div>
+              );
+            }
+          })}
+        </div>
+      </div>
+    );
+  } else {
+    load();
 
     return (
       <ColorRing

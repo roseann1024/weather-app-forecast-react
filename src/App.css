@@ -8,9 +8,7 @@
 
 .App .title {
   font-size: 40px;
-  background: -webkit-linear-gradient(60deg, #66e0b8 0%, #fbed96 100%);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #f0ec98;
   margin: 0;
   padding: 0;
   display: flex;
@@ -36,6 +34,6 @@
   }
 
   .App footer {
-    font-size: 7px;
+    font-size: 8px;
   }
 }

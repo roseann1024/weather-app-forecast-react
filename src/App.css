@@ -20,7 +20,10 @@
 
 .App footer {
   color: whitesmoke;
-  font-size: 14px;
+  font-size: 12px;
+  background: rgba(0, 41, 27, 0.8);
+  padding: 5px;
+  border-radius: 20px;
 }
 
 @media (max-width: 970px) {
@@ -35,5 +38,6 @@
 
   .App footer {
     font-size: 8px;
+    padding: 5px 3px;
   }
 }
